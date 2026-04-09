@@ -34,14 +34,20 @@ st.set_page_config(
 )
 
 # ---------------------------------------------------------------------------
-# Sample forms — paths relative to project root
+# Sample forms — check local sample_forms/ first, then parent directory
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SAMPLE_FORMS = {
-    "JHA1 — Job Hazard Analysis": os.path.join(PROJECT_ROOT, "form_JHA1.json"),
-    "JHA2 — Job Hazard Analysis (v2)": os.path.join(PROJECT_ROOT, "from_JHA2.json"),
-    "BORE1 — Bore Report": os.path.join(PROJECT_ROOT, "form_BORE1.json"),
+APP_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT = os.path.dirname(APP_DIR)
+SAMPLE_FILES = {
+    "JHA1 — Job Hazard Analysis": "form_JHA1.json",
+    "JHA2 — Job Hazard Analysis (v2)": "from_JHA2.json",
+    "BORE1 — Bore Report": "form_BORE1.json",
 }
+SAMPLE_FORMS = {}
+for label, filename in SAMPLE_FILES.items():
+    local = os.path.join(APP_DIR, "sample_forms", filename)
+    parent = os.path.join(PROJECT_ROOT, filename)
+    SAMPLE_FORMS[label] = local if os.path.exists(local) else parent
 
 
 def load_sample(name: str) -> str:

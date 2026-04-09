@@ -1,0 +1,1668 @@
+{
+    "formId": null,
+    "area": "1054",
+    "workType": "JHA1",
+    "selectedTraining": null,
+    "status": "Open",
+    "isReadOnly": false,
+    "canCopy": false,
+    "canClose": false,
+    "sections": [
+        {
+            "id": "HEADER",
+            "label": "Header",
+            "type": "header",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "WBS",
+                    "label": "WBS",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "K.100297.559.299",
+                            "text": "K.100297.559.299 (DESERT OASIS MHP_FR_AGUILERA)"
+                        },
+                        {
+                            "value": "K.100295.572.056",
+                            "text": "K.100295.572.056 (ATLANTIC TRAILER VILLAGE MHP)"
+                        }
+                    ],
+                    "logic": [],
+                    "value": "K.100297.559.299",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "PersonBriefingName",
+                    "label": "Person Conducting",
+                    "type": "PEOPLEPICKER",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "ExternalTicketNumber",
+                    "label": "One Call Ticket#",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "Location",
+                    "label": "Location",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 50
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "StartDate",
+                    "label": "Date",
+                    "type": "DATE",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "DEFAULT=TODAY"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "StartTime",
+                    "label": "Start Time",
+                    "type": "TIME",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "Observer",
+                    "label": "Safety Observer",
+                    "type": "PEOPLEPICKER",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "Temperature",
+                    "label": "Temp",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": true,
+                        "decimals": 0,
+                        "minLength": 1,
+                        "maxLength": 3
+                    },
+                    "options": null,
+                    "logic": [
+                        "DEFAULT=TEMPERATURE"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "WindDir",
+                    "label": "Emergency Gas Leak Wind Direction",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "N",
+                            "text": "North"
+                        },
+                        {
+                            "value": "NE",
+                            "text": "Northeast"
+                        },
+                        {
+                            "value": "NNE",
+                            "text": "North-Northeast"
+                        },
+                        {
+                            "value": "NNW",
+                            "text": "North-Northwest"
+                        },
+                        {
+                            "value": "NW",
+                            "text": "Northwest"
+                        },
+                        {
+                            "value": "E",
+                            "text": "East"
+                        },
+                        {
+                            "value": "ENE",
+                            "text": "East-Northeast"
+                        },
+                        {
+                            "value": "ESE",
+                            "text": "East-Southeast"
+                        },
+                        {
+                            "value": "S",
+                            "text": "South"
+                        },
+                        {
+                            "value": "SE",
+                            "text": "Southeast"
+                        },
+                        {
+                            "value": "SSE",
+                            "text": "South-Southeast"
+                        },
+                        {
+                            "value": "SSW",
+                            "text": "South-Southwest"
+                        },
+                        {
+                            "value": "SW",
+                            "text": "Southwest"
+                        },
+                        {
+                            "value": "W",
+                            "text": "West"
+                        },
+                        {
+                            "value": "WNW",
+                            "text": "West-Northwest"
+                        },
+                        {
+                            "value": "WSW",
+                            "text": "West-Southwest"
+                        }
+                    ],
+                    "logic": [
+                        "DEFAULT=WINDDIR"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.6073490"
+        },
+        {
+            "id": "JOBCOND",
+            "label": "Jobsite Conditions",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION1",
+                    "label": "Ignitation Source Safe?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION2",
+                    "label": "Proper OQ on tasks performed?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION35",
+                    "label": "Please add picture and provide detailed notes",
+                    "type": "MEDIANOTE",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION40=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.3773749"
+        },
+        {
+            "id": "JOBSETUP",
+            "label": "Jobsite Setup",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION3",
+                    "label": "Side Walks Secure?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        },
+                        {
+                            "value": "N/A",
+                            "text": "N/A"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION4",
+                    "label": "Traffic Plan Secure?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        },
+                        {
+                            "value": "N/A",
+                            "text": "N/A"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION5",
+                    "label": "Walk down of site completed, and all hazards identified?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        },
+                        {
+                            "value": "N/A",
+                            "text": "N/A"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION6",
+                    "label": "Proper PPE:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "VEST",
+                            "text": "Vest"
+                        },
+                        {
+                            "value": "HARDHAT",
+                            "text": "Hardhat"
+                        },
+                        {
+                            "value": "SAFTEY GLASSES",
+                            "text": "Saftey Glasses"
+                        },
+                        {
+                            "value": "GLOVES",
+                            "text": "Gloves"
+                        },
+                        {
+                            "value": "HEARING PROTECTION",
+                            "text": "Hearing Protection"
+                        }
+                    ],
+                    "logic": [
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION7",
+                    "label": "Special PPE:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "FR CLOTHING",
+                            "text": "Fr Clothing"
+                        },
+                        {
+                            "value": "SCBA/RESP.",
+                            "text": "Scba/Resp."
+                        },
+                        {
+                            "value": "OTHER",
+                            "text": "Other*"
+                        }
+                    ],
+                    "logic": [
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION8",
+                    "label": "Cell-Phone coverage?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION112",
+                    "label": "If no cell coverage, describe emergency actions discussed:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION8=NO"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION100",
+                    "label": "Other PPE:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION7=OTHER"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.4522480"
+        },
+        {
+            "id": "EQUIPMENT",
+            "label": "Equipment",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION9",
+                    "label": "Equipment available on site?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION10",
+                    "label": "Equipment inspected/proper condition?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION11",
+                    "label": "Veh/Equip. parked to protect Work Area?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION12",
+                    "label": "Red Zone/Line of Fire Hazards identified?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION13",
+                    "label": "Overhead utilities located/identified?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION14",
+                    "label": "Utility contacted within 5’of Utility Pole?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.4117020"
+        },
+        {
+            "id": "TOOLING",
+            "label": "Tooling",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION15",
+                    "label": "Tools available on site?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION16",
+                    "label": "Tools in proper working condition?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION17",
+                    "label": "Special Tools & Equipment being used for the day?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION18",
+                    "label": "Fire Extinguishers placed upwind and inspected?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION19",
+                    "label": "Perform daily Bump Test for 02 Sensor?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.4007642"
+        },
+        {
+            "id": "SAFETYPREC",
+            "label": "Safety  Precautions",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION20",
+                    "label": "Stretch & Flex Completed?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION21",
+                    "label": "Cones & Barricades properly placed?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION22",
+                    "label": "Slips, Trips & Falls Hazards Identified?",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION23",
+                    "label": "Personal Impacts (fatigue, repetitive tasks, distractions, etc.) addressed and communicated?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION24",
+                    "label": "Total Number of Utility Crossings?",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION25",
+                    "label": "Are All Crew Members aware of Crossings?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        },
+                        {
+                            "value": "N/A",
+                            "text": "N/A"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION26",
+                    "label": "All Crossings Visually Verified?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION101",
+                    "label": "Signature of Crew Member Verifying Crossings:",
+                    "type": "SIGN_EMP",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION26=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION27",
+                    "label": "Excavation Inspection completed by Competent Person and requirements met?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION28",
+                    "label": "Environmental/other potential Hazards?",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION29",
+                    "label": "List a reference from the Customer Gas Standards:",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 5,
+                        "maxLength": 20
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION30",
+                    "label": "All Sub-Contractors affecting this job have participated in the Pre-Job Briefing?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.4516027"
+        },
+        {
+            "id": "MEDIA",
+            "label": "Capture Pictures",
+            "type": "mediasection",
+            "url": null,
+            "logic": null,
+            "rules": {
+                "required": false,
+                "min": 0
+            },
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000107"
+        },
+        {
+            "id": "MEDIA2",
+            "label": "Capture Pictures (required)",
+            "type": "mediasection",
+            "url": null,
+            "logic": null,
+            "rules": {
+                "required": true,
+                "min": 1
+            },
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000024"
+        },
+        {
+            "id": "MEDIA3",
+            "label": "Capture Pictures (required with min/max)",
+            "type": "mediasection",
+            "url": null,
+            "logic": null,
+            "rules": {
+                "required": true,
+                "min": 2
+            },
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000019"
+        },
+        {
+            "id": "TRAINING",
+            "label": "Training",
+            "type": "trainingsection",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000048"
+        },
+        {
+            "id": "SIGN_OTHER",
+            "label": "Non-Employee Signature",
+            "type": "signature_other",
+            "url": null,
+            "logic": null,
+            "rules": {
+                "required": true,
+                "min": null
+            },
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000625"
+        },
+        {
+            "id": "SIGN_EMP",
+            "label": "Employee Signature",
+            "type": "signature_emp",
+            "url": null,
+            "logic": null,
+            "rules": {
+                "required": true,
+                "min": null
+            },
+            "fields": null,
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.0000062"
+        },
+        {
+            "id": "FUSESIG",
+            "label": "Fuser Signature",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION31",
+                    "label": "Are we fusing pipe today?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION32",
+                    "label": "Fuser signature is acknowledgement that they are competent on task and size of pipe:",
+                    "type": "SIGN_EMP",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION31=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION91",
+                    "label": "Did you have a Contractor fusing on site today?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION92",
+                    "label": "Signature of Contractor:",
+                    "type": "SIGN_OTHER",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION91=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION113",
+                    "label": "Were all fusions inspected by a certified individual?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION114",
+                    "label": "Signature and acknowledegement that I am certified on the fusions I have Inspected:",
+                    "type": "SIGN_EMP",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION113=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION115",
+                    "label": "Did you have the same Contractor site day after day?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION116",
+                    "label": "Signature of Contractor:",
+                    "type": "SIGN_OTHER",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION115=YES",
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.4138488"
+        },
+        {
+            "id": "CLOSEOUT",
+            "label": "Daily Close Out (to be completed by the Foreman at the end of the day)",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION103",
+                    "label": "Did any unplanned events occur today?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION104",
+                    "label": "What unplanned events occured today?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "INJURY",
+                            "text": "Injury"
+                        },
+                        {
+                            "value": "OUTAGE / FLASH",
+                            "text": "Outage / Flash"
+                        },
+                        {
+                            "value": "PROPERTY DAMAGE / UTILITY STRI",
+                            "text": "Property Damage / Utility Strike"
+                        },
+                        {
+                            "value": "VEHICLE RELATED",
+                            "text": "Vehicle Related"
+                        },
+                        {
+                            "value": "ENVIRONMENTAL SPILL",
+                            "text": "Environmental Spill"
+                        },
+                        {
+                            "value": "OTHER",
+                            "text": "Other*"
+                        }
+                    ],
+                    "logic": [
+                        "IF QUESTION103=YES"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION105",
+                    "label": "If yes, describe the incident or near miss:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION103=YES"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION106",
+                    "label": "If yes, were the GF & Safety contacted promptly?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [
+                        "IF QUESTION103=YES"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION107",
+                    "label": "Are any follow up actions needed related to the job scope?",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        },
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION108",
+                    "label": "Other commonts on job close out:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": false,
+            "buildTime": "00:00:00.4136149"
+        }
+    ],
+    "buildError": null,
+    "buildTime": "00:00:00.9416714"
+}

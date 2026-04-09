@@ -1,0 +1,556 @@
+{
+    "formId": null,
+    "area": "1054",
+    "workType": "BORE1",
+    "selectedTraining": null,
+    "status": "Open",
+    "isReadOnly": false,
+    "canCopy": false,
+    "canClose": false,
+    "sections": [
+        {
+            "id": "HEADER",
+            "label": "Header",
+            "type": "header",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "JobName",
+                    "label": "Subdivision or Project Name",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 50
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "Street",
+                    "label": "Street Address",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "Location",
+                    "label": "Location",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 30
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "City",
+                    "label": "City",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 35
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "State",
+                    "label": "State",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 2
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "ZIP",
+                    "label": "Zip Code",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 8
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "StartDate",
+                    "label": "Installation Date",
+                    "type": "DATE",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "DEFAULT=TODAY"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "ExternalTicketNumber",
+                    "label": "One Call Ticket#",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 35
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": "",
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "WBS",
+                    "label": "WBS",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "K.100297.559.299",
+                            "text": "K.100297.559.299 (DESERT OASIS MHP_FR_AGUILERA)"
+                        },
+                        {
+                            "value": "K.100295.572.056",
+                            "text": "K.100295.572.056 (ATLANTIC TRAILER VILLAGE MHP)"
+                        }
+                    ],
+                    "logic": [],
+                    "value": "K.100297.559.299",
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.5504357"
+        },
+        {
+            "id": "BOREDETAIL",
+            "label": "Bore Detail",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION42",
+                    "label": "Type of Bore:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "PNEUMATIC",
+                            "text": "Pneumatic"
+                        },
+                        {
+                            "value": "DIRECTIONDRILL",
+                            "text": "Directional Drill"
+                        },
+                        {
+                            "value": "OTHER",
+                            "text": "Other*"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION52",
+                    "label": "Type of Bore Other* Explained:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION42=OTHER"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION43",
+                    "label": "Type of Verification of Sewer Lateral:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "CROSSING",
+                            "text": "Crossing"
+                        },
+                        {
+                            "value": "PARALLEL",
+                            "text": "Parallel"
+                        },
+                        {
+                            "value": "DAYLIGHT",
+                            "text": "Daylight"
+                        },
+                        {
+                            "value": "SONDE",
+                            "text": "Sonde"
+                        },
+                        {
+                            "value": "CAMERA",
+                            "text": "Camera"
+                        },
+                        {
+                            "value": "FISH TAPE & LOCATED",
+                            "text": "Fish tape & Located"
+                        },
+                        {
+                            "value": "WITHIN 4FT POTHOLE",
+                            "text": "Within 4ft Pothole"
+                        },
+                        {
+                            "value": "OTHER",
+                            "text": "Other*"
+                        }
+                    ],
+                    "logic": [
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION50",
+                    "label": "Sewer Lateral Verification Other* Explained:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION43=OTHER"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION44",
+                    "label": "Type of Verification of Sewer Main:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "CROSSING",
+                            "text": "Crossing"
+                        },
+                        {
+                            "value": "PARALLEL",
+                            "text": "Parallel"
+                        },
+                        {
+                            "value": "DAYLIGHT",
+                            "text": "Daylight"
+                        },
+                        {
+                            "value": "SONDE",
+                            "text": "Sonde"
+                        },
+                        {
+                            "value": "CAMERA",
+                            "text": "Camera"
+                        },
+                        {
+                            "value": "OTHER",
+                            "text": "Other*"
+                        }
+                    ],
+                    "logic": [
+                        "MORE OPTION"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION51",
+                    "label": "Sewer Main Verification Other* Explained:",
+                    "type": "TEXTBOX",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [
+                        "IF QUESTION44=OTHER"
+                    ],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.3771660"
+        },
+        {
+            "id": "BOREDEPTH",
+            "label": "Bore Depth",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION45",
+                    "label": "Depth of Line Installed (inches):",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": true,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION46",
+                    "label": "Depth of Sewer Main (inches):",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": true,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION47",
+                    "label": "Depth of Sewer Lateral (inches):",
+                    "type": "INPUT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": true,
+                        "decimals": null,
+                        "minLength": 0,
+                        "maxLength": 40
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.3330630"
+        },
+        {
+            "id": "BORECON",
+            "label": "Bore Conflict (Cross/Parallel with in 4ft (48 In) of a sewer line. Ensure process used to determine is explained above)",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION48",
+                    "label": "Crossing:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                },
+                {
+                    "id": "QUESTION49",
+                    "label": "Parallel:",
+                    "type": "SELECT",
+                    "rules": {
+                        "required": false,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": [
+                        {
+                            "value": "YES",
+                            "text": "Yes"
+                        },
+                        {
+                            "value": "NO",
+                            "text": "No"
+                        }
+                    ],
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.3385787"
+        },
+        {
+            "id": "COMPBY",
+            "label": "Completed By",
+            "type": "questions",
+            "url": null,
+            "logic": null,
+            "rules": null,
+            "fields": [
+                {
+                    "id": "QUESTION99",
+                    "label": "Completed By:",
+                    "type": "SIGN_EMP",
+                    "rules": {
+                        "required": true,
+                        "numericOnly": false,
+                        "decimals": null,
+                        "minLength": null,
+                        "maxLength": null
+                    },
+                    "options": null,
+                    "logic": [],
+                    "value": null,
+                    "answers": null,
+                    "signatures": null
+                }
+            ],
+            "media": null,
+            "signatures": null,
+            "trainingInfo": null,
+            "canClose": true,
+            "buildTime": "00:00:00.3297678"
+        }
+    ],
+    "buildError": null,
+    "buildTime": "00:00:00.8046042"
+}
