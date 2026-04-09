@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+*.pdf
+back_translate_jha1_response.json

@@ -1,0 +1,556 @@
+{
+  "formId": null,
+  "area": "1054",
+  "workType": "BORE1",
+  "selectedTraining": null,
+  "status": "Open",
+  "isReadOnly": false,
+  "canCopy": false,
+  "canClose": false,
+  "sections": [
+    {
+      "id": "HEADER",
+      "label": "Encabezado",
+      "type": "header",
+      "url": null,
+      "logic": null,
+      "rules": null,
+      "fields": [
+        {
+          "id": "JobName",
+          "label": "Subdivision o nombre del proyecto",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 50
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "Street",
+          "label": "Dirección",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 40
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "Location",
+          "label": "Zona",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 30
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "City",
+          "label": "Ciudad",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 35
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "State",
+          "label": "Estado",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 2
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "ZIP",
+          "label": "Código postal",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 8
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "StartDate",
+          "label": "Fecha de instalación",
+          "type": "DATE",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": null,
+          "logic": [
+            "DEFAULT=TODAY"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "ExternalTicketNumber",
+          "label": "Ticket de una llamada#",
+          "type": "INPUT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 35
+          },
+          "options": null,
+          "logic": [],
+          "value": "",
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "WBS",
+          "label": "WBS",
+          "type": "SELECT",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "K.100297.559.299",
+              "text": "K.100297,559.299 (DESERT OASIS MHP_FR_AGUILERA)"
+            },
+            {
+              "value": "K.100295.572.056",
+              "text": "K.100295.572.056 (Atlantic TRAILER VILLAGE MHP)"
+            }
+          ],
+          "logic": [],
+          "value": "K.100297.559.299",
+          "answers": null,
+          "signatures": null
+        }
+      ],
+      "media": null,
+      "signatures": null,
+      "trainingInfo": null,
+      "canClose": true,
+      "buildTime": "00:00:00.5504357"
+    },
+    {
+      "id": "BOREDETAIL",
+      "label": "Detalle del aburrimiento",
+      "type": "questions",
+      "url": null,
+      "logic": null,
+      "rules": null,
+      "fields": [
+        {
+          "id": "QUESTION42",
+          "label": "Tipo de boro:",
+          "type": "SELECT",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "PNEUMATIC",
+              "text": "Neumático"
+            },
+            {
+              "value": "DIRECTIONDRILL",
+              "text": "Taladro direccional"
+            },
+            {
+              "value": "OTHER",
+              "text": "Otros*"
+            }
+          ],
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION52",
+          "label": "Tipo de aburrimiento Otro* Explicado:",
+          "type": "TEXTBOX",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": null,
+          "logic": [
+            "IF QUESTION42=OTHER"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION43",
+          "label": "Tipo de Verificación de Alcantarillado Lateral:",
+          "type": "SELECT",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "CROSSING",
+              "text": "Cruce"
+            },
+            {
+              "value": "PARALLEL",
+              "text": "Paralelo"
+            },
+            {
+              "value": "DAYLIGHT",
+              "text": "Luz del día"
+            },
+            {
+              "value": "SONDE",
+              "text": "Sonde"
+            },
+            {
+              "value": "CAMERA",
+              "text": "Cámara"
+            },
+            {
+              "value": "FISH TAPE & LOCATED",
+              "text": "Cinta de pescado & Ubicada"
+            },
+            {
+              "value": "WITHIN 4FT POTHOLE",
+              "text": "Dentro de 4 pies de bache"
+            },
+            {
+              "value": "OTHER",
+              "text": "Otros*"
+            }
+          ],
+          "logic": [
+            "MORE OPTION"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION50",
+          "label": "Otros* Explicados:",
+          "type": "TEXTBOX",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": null,
+          "logic": [
+            "IF QUESTION43=OTHER"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION44",
+          "label": "Tipo de verificación de la alcantarilla principal:",
+          "type": "SELECT",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "CROSSING",
+              "text": "Cruce"
+            },
+            {
+              "value": "PARALLEL",
+              "text": "Paralelo"
+            },
+            {
+              "value": "DAYLIGHT",
+              "text": "Luz del día"
+            },
+            {
+              "value": "SONDE",
+              "text": "Sonde"
+            },
+            {
+              "value": "CAMERA",
+              "text": "Cámara"
+            },
+            {
+              "value": "OTHER",
+              "text": "Otros*"
+            }
+          ],
+          "logic": [
+            "MORE OPTION"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION51",
+          "label": "Otros* Explicados:",
+          "type": "TEXTBOX",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": null,
+          "logic": [
+            "IF QUESTION44=OTHER"
+          ],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        }
+      ],
+      "media": null,
+      "signatures": null,
+      "trainingInfo": null,
+      "canClose": true,
+      "buildTime": "00:00:00.3771660"
+    },
+    {
+      "id": "BOREDEPTH",
+      "label": "Profundidad del aburrimiento",
+      "type": "questions",
+      "url": null,
+      "logic": null,
+      "rules": null,
+      "fields": [
+        {
+          "id": "QUESTION45",
+          "label": "Profundidad de la línea instalada (pulgadas):",
+          "type": "INPUT",
+          "rules": {
+            "required": false,
+            "numericOnly": true,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 40
+          },
+          "options": null,
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION46",
+          "label": "Profundidad de la alcantarilla principal (pulgadas):",
+          "type": "INPUT",
+          "rules": {
+            "required": false,
+            "numericOnly": true,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 40
+          },
+          "options": null,
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION47",
+          "label": "Profundidad de la alcantarilla lateral (pulgadas):",
+          "type": "INPUT",
+          "rules": {
+            "required": false,
+            "numericOnly": true,
+            "decimals": null,
+            "minLength": 0,
+            "maxLength": 40
+          },
+          "options": null,
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        }
+      ],
+      "media": null,
+      "signatures": null,
+      "trainingInfo": null,
+      "canClose": true,
+      "buildTime": "00:00:00.3330630"
+    },
+    {
+      "id": "BORECON",
+      "label": "Conflicto de aburrimiento (Cruz/Paralelo con en 4 pies (48 In) de una línea de alcantarillado. Asegúrese de que el proceso utilizado para determinar se explica arriba)",
+      "type": "questions",
+      "url": null,
+      "logic": null,
+      "rules": null,
+      "fields": [
+        {
+          "id": "QUESTION48",
+          "label": "Cruce:",
+          "type": "SELECT",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "YES",
+              "text": "Sí"
+            },
+            {
+              "value": "NO",
+              "text": "No"
+            }
+          ],
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        },
+        {
+          "id": "QUESTION49",
+          "label": "Paralelo:",
+          "type": "SELECT",
+          "rules": {
+            "required": false,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": [
+            {
+              "value": "YES",
+              "text": "Sí"
+            },
+            {
+              "value": "NO",
+              "text": "No"
+            }
+          ],
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        }
+      ],
+      "media": null,
+      "signatures": null,
+      "trainingInfo": null,
+      "canClose": true,
+      "buildTime": "00:00:00.3385787"
+    },
+    {
+      "id": "COMPBY",
+      "label": "Completado por",
+      "type": "questions",
+      "url": null,
+      "logic": null,
+      "rules": null,
+      "fields": [
+        {
+          "id": "QUESTION99",
+          "label": "Completado por:",
+          "type": "SIGN_EMP",
+          "rules": {
+            "required": true,
+            "numericOnly": false,
+            "decimals": null,
+            "minLength": null,
+            "maxLength": null
+          },
+          "options": null,
+          "logic": [],
+          "value": null,
+          "answers": null,
+          "signatures": null
+        }
+      ],
+      "media": null,
+      "signatures": null,
+      "trainingInfo": null,
+      "canClose": true,
+      "buildTime": "00:00:00.3297678"
+    }
+  ],
+  "buildError": null,
+  "buildTime": "00:00:00.8046042"
+}
